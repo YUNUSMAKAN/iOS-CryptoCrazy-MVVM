@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C0F15012502702A00698A4D /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F15002502702A00698A4D /* Webservice.swift */; };
+		6C3B667D25050E000097FEC9 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B667C25050E000097FEC9 /* CryptoViewModel.swift */; };
 		6C4558BA24CF2D2900A93639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4558B924CF2D2900A93639 /* AppDelegate.swift */; };
 		6C4558BC24CF2D2900A93639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4558BB24CF2D2900A93639 /* SceneDelegate.swift */; };
 		6C4558BE24CF2D2900A93639 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4558BD24CF2D2900A93639 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		6C0F15002502702A00698A4D /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		6C3B667C25050E000097FEC9 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		6C4558B624CF2D2900A93639 /* CryptoCrazyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCrazyMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4558B924CF2D2900A93639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C4558BB24CF2D2900A93639 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		6CC9D6AE24FC074E0045F906 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6C3B667C25050E000097FEC9 /* CryptoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				6CC9D6AB24FC05050045F906 /* CryptoTableViewCell.swift in Sources */,
 				6C4558BE24CF2D2900A93639 /* ViewController.swift in Sources */,
 				6C0F15012502702A00698A4D /* Webservice.swift in Sources */,
+				6C3B667D25050E000097FEC9 /* CryptoViewModel.swift in Sources */,
 				6C4558BA24CF2D2900A93639 /* AppDelegate.swift in Sources */,
 				6CC9D6B124FC07B90045F906 /* CryptoCurrency.swift in Sources */,
 				6C4558BC24CF2D2900A93639 /* SceneDelegate.swift in Sources */,
