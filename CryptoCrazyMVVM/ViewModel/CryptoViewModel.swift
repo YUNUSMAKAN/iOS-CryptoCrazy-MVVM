@@ -24,6 +24,21 @@ struct CryptoListViewModel {
     }
     
 }
+/*
+extension CryptoListViewModel {
+    
+    func numberOfRowsInSection() -> Int { //Toplam kac tane cryptocurrency olacagini vericek.
+        
+        return self.cryptoCurrencyList.count
+    }
+    
+    func cryptoAtIndex(_ index: Int) -> CryptoViewModel { //Iki struct i bu sekilde birbirine baglamis oluruz.
+        let crypto = self.cryptoCurrencyList[index]
+        return CryptoViewModel(cryptoCurrency: crypto)
+        
+    }
+    
+}*/
 
 struct CryptoViewModel {
     //Burada servisten cekil verileri tek olarak ele alicak.
@@ -37,4 +52,17 @@ struct CryptoViewModel {
         return self.cryptoCurrency.price
     }
 }
- 
+
+/*
+extension CryptoViewModel {
+
+var name : String {
+       return self.cryptoCurrency.currency
+   }
+   
+   var price : String {
+       return self.cryptoCurrency.price
+   }
+
+}
+*/
