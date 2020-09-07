@@ -12,6 +12,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     
     @IBOutlet weak var tableView: UITableView!
     
+    var colorArray = [UIColor]()
+    
     private var cryptoListViewModel : CryptoListViewModel!
     
     override func viewDidLoad() {
@@ -20,6 +22,16 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        self.colorArray = [
+            UIColor(red: 75/255, green: 57/255, blue: 240/255, alpha: 1.0),
+            UIColor(red: 15/255, green: 147/255, blue: 173/255, alpha: 1.0),
+            UIColor(red: 104/255, green: 169/255, blue: 24/255, alpha: 1.0),
+            UIColor(red: 104/255, green: 127/255, blue: 10/255, alpha: 1.0),
+            UIColor(red: 19/255, green: 57/255, blue: 67/255, alpha: 1.0),
+            UIColor(red: 90/255, green: 67/255, blue: 80/255, alpha: 1.0),
+        ]
+        
         
         getData()
     }
@@ -55,6 +67,11 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         cell.priceText.text = cryptoViewModel.price
         cell.currencyText.text = cryptoViewModel.name
+        
+        //ARKA PLAN RENKLENDIRME ISLEMI.
+        
+        cell.backgroundColor = self.colorArray[indexPath.row % 6]
+        
         
         return cell
         
